@@ -2,7 +2,7 @@ const express = require("express");
 const { randomUUID } = require("crypto");
 const router = express.Router();
 
-const Booking = require("../models/Booking");
+const Booking = require("../models/booking");
 const movies = require("../data/movies");
 
 const SHOWTIMES = ["12:00 PM", "4:00 PM", "8:00 PM"];
