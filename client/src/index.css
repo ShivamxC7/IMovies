@@ -63,6 +63,64 @@ input:focus { border-color: var(--accent); }
 .movie-card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: transform .2s, border-color .2s; }
 .movie-card:hover { transform: translateY(-5px); border-color: #5b2936; }
 .movie-card img { display: block; width: 100%; height: 330px; object-fit: cover; background: #222; }
+
+
+.movie-poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-poster img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  background: #222;
+}
+
+.movie-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: white;
+  background: #16803c;
+}
+
+.status-upcoming {
+  background: #34343f;
+  border: 1px solid #60606d;
+}
+
+.status-bookings {
+  background: #e83b5b;
+}
+
+.movie-info .movie-release {
+  margin-top: -7px;
+  margin-bottom: 15px;
+  color: #e4a1ad;
+  font-size: 11px;
+}
+
+@media (max-width: 760px) {
+  .movie-poster img {
+    height: 250px;
+  }
+
+  .movie-status {
+    top: 8px;
+    left: 8px;
+    padding: 5px 6px;
+    font-size: 9px;
+  }
+}
+
 .movie-info { padding: 18px; }
 .movie-info h3 { font-size: 19px; margin-bottom: 9px; }
 .movie-info p { color: var(--muted); font-size: 12px; margin-bottom: 17px; }
